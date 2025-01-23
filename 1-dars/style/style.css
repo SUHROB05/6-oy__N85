@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 2px solid rgba(0, 0, 0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.445);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cart__input {
+    padding: 10px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+
+}
+
+.cart__input input {
+    width: 500px;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.cart__input button {
+    width: 100px;
+    padding: 5px;
+    height: 40px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(93, 240, 64, 0.671);
+    border: none;
+    transition: 0.5s;
+}
+
+.cart__input button:hover {
+    color: rgba(93, 240, 64);
+    background-color: #fff;
+    border: 1px solid rgba(93, 240, 64);
+    box-shadow: 0 0 15px rgba(93, 240, 64);
+}
+
+
+.cart__input form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.div {
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.div ul {
+    padding: 20px 40px;
+    list-style: none;
+}
+
+.div ul li {
+    margin: 7px 0;
+    padding: 3px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.474);
+    border: 0.5px solid rgba(0, 0, 0, 0.451);
+}
+
+.divgayigish {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.inputqoshish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    display: none;
+}
+
+.divgayigish p {
+    width: 420px;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    /* margin-right: 300px; */
+}
+
+.divgayigish input {
+    padding: 2px;
+}
+
+.divgayigish button:nth-of-type(1) {
+    background-color: rgba(0, 0, 255, 0.466);
+    width: 70px;
+    margin-left: auto;
+    padding: 3px;
+}
+
+.divgayigish button:nth-of-type(2) {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 70px;
+    padding: 3px;
+}
+
+.divgayigish button:hover {
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.666);
+}
+
+p.dane {
+    font-style: italic;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.455);
+
+}
+
+.inputqoshish input {
+    width: 480px;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.inputqoshish button {
+    width: 100px;
+    padding: 5px;
+    height: 40px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(93, 240, 64, 0.671);
+    border: none;
+    transition: 0.5s;
+}
+
+.inputqoshish button:hover {
+    color: rgba(93, 240, 64);
+    background-color: #fff;
+    border: 1px solid rgba(93, 240, 64);
+    box-shadow: 0 0 15px rgba(93, 240, 64);
+}
