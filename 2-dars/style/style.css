@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contayner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* orqa fon yonish uchun */
+.body {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.contayner {
+    border: 5px solid #ff0000;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 30px hsla(0, 100%, 50%, 1);
+    /* Yonayotgan effekt */
+    animation: glow 3s infinite linear;
+    /* Ranglar 360 daraja aylanadi */
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 30px 10px hsla(0, 100%, 50%, 1);
+        /* Qizil */
+    }
+
+    25% {
+        box-shadow: 0 0 30px 10px hsla(120, 100%, 50%, 1);
+        /* Yashil */
+    }
+
+    50% {
+        box-shadow: 0 0 30px 10px hsla(240, 100%, 50%, 1);
+        /* Moviy */
+    }
+
+    75% {
+        box-shadow: 0 0 30px 10px rgb(246, 255, 0);
+        /* Pushti */
+    }
+
+    100% {
+        box-shadow: 0 0 30px 10px hsla(360, 100%, 50%, 1);
+        /* Qizilga qaytadi */
+    }
+}
+
+
+
+
+
+
+
+.input-div {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.532);
+    padding: 7px 10px;
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.input {
+    cursor: pointer;
+    width: 80%;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.select {
+    cursor: pointer;
+    width: 8%;
+    border-radius: 7px;
+    padding: 5px 12px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 12%;
+    border-radius: 7px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+
+.btn:hover {
+    border: 1px solid rgb(3, 223, 7);
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 223, 7);
+    box-shadow: 0 0 12px rgb(3, 223, 7);
+}
+
+.output {
+    border-top: 2px solid rgb(255, 255, 255);
+    padding-top: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.tabel {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.57);
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px 7px;
+}
+
+.thead {
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.57)
+}
+
+.thead tr {
+    padding: 0 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tbody {
+    width: 100%;
+}
+
+.tbody tr {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.57);
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.tbody tr td button {
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.57);
+    margin: 0 5px;
+}
+
+.tbody tr td button:hover {
+    background-color: blue;
+    border: 1px solid blue;
+    box-shadow: 0 0 10px blue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body-div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.284);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    display: none;
+    /* transition: 0.3s; */
+}
+
+.input-card {
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border: 10px double blue;
+    box-shadow: 0 0 30px hsla(0, 100%, 50%, 1);
+    /* Yonayotgan effekt */
+    animation: glow 3s infinite linear;
+    /* Ranglar 360 daraja aylanadi */
+}
+
+.input-card h2 {
+    text-align: center;
+    margin: 20px 0;
+    font: bold;
+    color: #000;
+}
+
+.input-card input {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 7px;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+}
+
+.input-card select {
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.input-card button {
+    background-color: blue;
+    width: 74%;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 5%;
+    font-size: 20px;
+    color: white;
+    font: bold;
+}
+
+.input-card button:hover {
+    box-shadow: 0 0 15px blue;
+    border: 1px solid blue;
+    color: blue;
+    background-color: white;
+}

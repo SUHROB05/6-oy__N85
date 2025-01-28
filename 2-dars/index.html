@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="contayner">
+            <div class="input-div" id="input-div">
+                <input id="input" class="input" type="text" placeholder="Search...">
+                <select id="select" class="select" name="" id="">
+                    <option value="All" selected>All</option>
+                    <option value="A-sinf">A-Sinf</option>
+                    <option value="B-sinf">B-Sinf</option>
+                    <option value="C-sinf">C-Sinf</option>
+                    <option value="D-sinf">D-Sinf</option>
+                </select>
+                <button id="input-btn" class="btn">Add Sutudent</button>
+            </div>
+            <div class="output">
+                <table class="tabel">
+                    <thead class="thead">
+                        <tr>
+                            <th>#</th>
+                            <th>Ismi</th>
+                            <th>Familyasi</th>
+                            <th>Sinfi</th>
+                            <th>Ishlaydmi</th>
+                            <th style="margin-right: 40px;">Hodisa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody" class="tbody">
+                        <tr>
+                            <td>1</td>
+                            <td>Azamat</td>
+                            <td>Abrorovich</td>
+                            <td>B-Sinf</td>
+                            <td>Yo'q</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ibrohim</td>
+                            <td>Abrorovich</td>
+                            <td>A-Sinf</td>
+                            <td>Kosib</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="body-div">
+                <div class="input-card">
+                    <h2>Yangi o'quchi yaratish <span class=""><button id="close-btn"
+                                style="margin-left: 160px;  width: 35px; height: 35px; border: none;">X</button></span>
+                    </h2>
+                    <input id="input-ism" type="text" placeholder="Ismi...">
+                    <input id="input-familya" type="text" placeholder="Familyasi...">
+                    <input id="ishlash" type="text" placeholder="Ishlaydimi...">
+                    <select id="select" class="select" name="" id="">
+                        <option value="All" selected>All</option>
+                        <option value="A-sinf">A-Sinf</option>
+                        <option value="B-sinf">B-Sinf</option>
+                        <option value="C-sinf">C-Sinf</option>
+                        <option value="D-sinf">D-Sinf</option>
+                    </select>
+                    <button id="user-malumot-add">Add Student</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
