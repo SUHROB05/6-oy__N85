@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Misol</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="budinlik">Budinlik</a></li>
+            <li><a href="#" id="taymer">Taymer</a></li>
+            <li><a href="#" id="musiqa">Musiqa</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div id="home-content">
+            <h1>Bugungi sana va vaqt:</h1>
+            <p id="datetime"></p>
+        </div>
+        <div id="budinlik-content" style="display:none;">
+            <h1>Budinlik</h1>
+            <p>Budinlik bo'limi.</p>
+        </div>
+        <div id="taymer-content" style="display:none;">
+            <h1>Taymer</h1>
+            <p>Taymer bo'limi.</p>
+        </div>
+        <div id="musiqa-content" style="display:none;">
+            <h1>Musiqa</h1>
+            <input type="file" id="music-file" accept="audio/*">
+            <audio id="audio-player" controls></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

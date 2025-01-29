@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soat</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="nav">
+            <button class="tooltip active"><img src="./assets/icons/clock (1).png" alt="">
+                <p>Soat</p>
+                <span class="tooltip-text">Soat</span>
+            </button>
+            <button class="tooltip"><img src="./assets/icons/bell.png" alt="">
+                <p>Budilnik</p>
+                <span class="tooltip-text">Budilnik</span>
+            </button>
+            <button class="tooltip"><img src="./assets/icons/stopwatch.png" alt="">
+                <p>Sekundamer</p>
+                <span class="tooltip-text">Sekundamer</span>
+            </button>
+        </div>
+        <div class="content">
+            <div class="soat active ">
+                <div class="clock">
+                    <h1 id="clock">00<span class="span">:</span>00<span class="span">:</span>00</h1>
+                    <p id="date"></p>
+                </div>
+            </div>
+            <div class="alarms">
+                <div class="alarms-header">
+                    <h1>Uyg'otkich</h1>
+                    <div class="alarms-list" id="alarmsList"></div>
+                </div>
+                <div class="buttons">
+                    <button class="add-btn" id="addAlarmBtn">+</button>
+                    <button class="clear-btn" id="clearAlarmsBtn">Tozalash</button>
+                </div>
+                <audio id="alarmSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+                <div id="alarmModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Uyg'otkich qo'shish</h2>
+                        <label for="alarmTimeInput">Vaqtni kiriting (HH:MM):</label>
+                        <input type="time" id="alarmTimeInput" required>
+                        <button id="saveAlarmBtn">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sekundamer">
+                <h1 id="stopwatch">00:00:00</h1>
+                <div class="buttons">
+                    <button id="startBtn">Boshlash</button>
+                    <button id="stopBtn">To'xtatish</button>
+                    <button id="resetBtn">Qayta o'rnatish</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
