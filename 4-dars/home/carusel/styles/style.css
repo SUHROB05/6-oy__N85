@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imgs/Bugatti-Chiron-Supersport-300+-for-sale.60230_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.main-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav {
+    padding: 50px 30px;
+    width: 20%;
+}
+
+nav h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+nav li {
+    font-size: 30px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 0 0 15px blue;
+    margin: 30px 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.carusel-main1 {
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+.carusel-cotayner1 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#c1{
+    width: 100%;
+    height: auto;
+}
+#c2{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.carusel1 {
+    /* position: relative;  */
+    width: 700px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carusel-card1 {
+    display: flex;
+    /* gap: 20px; */
+    width: 700px;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    transition: transform 0.5s ease-in-out;
+}
+
+.card1 {
+    flex: 0 0 auto;
+    width: 700px;
+    height: 400px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1 img{
+    width: 700px;
+    border-radius: 20px;
+    /* height: 500px; */
+}
+
+.carusel1 button {
+    /* position: absolute; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 10;
+    /* color: white; */
+    /* border: 5px solid blue; */
+}
+.carusel1 button:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255);
+}
+
+.chap-btn1{
+    margin-left: -25px;
+}
+.ong-btn1{
+    margin-left: 675px;
+}
+
+
+
+#a1{
+    background-color: blue;
+}
