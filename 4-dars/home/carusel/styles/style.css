@@ -59,11 +59,24 @@ nav a {
     align-items: center;
     overflow: hidden;
 }
+.carusel-cotayner3 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 #c1{
     width: 100%;
     height: auto;
 }
 #c2{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+#c3{
     display: none;
     width: 100%;
     height: auto;
@@ -76,11 +89,26 @@ nav a {
     display: flex;
     align-items: center;
 }
+.carusel3 {
+    /* position: relative;  */
+    width: 1260px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
 
 .carusel-card1 {
     display: flex;
     /* gap: 20px; */
     width: 700px;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    transition: transform 0.5s ease-in-out;
+}
+.carusel-card3 {
+    display: flex;
+    gap: 20px;
+    width: 1260px;
     /* overflow: hidden; */
     /* white-space: nowrap; */
     transition: transform 0.5s ease-in-out;
@@ -96,9 +124,25 @@ nav a {
     align-items: center;
     justify-content: center;
 }
+.card3 {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
 .card1 img{
     width: 700px;
     border-radius: 20px;
+    /* height: 500px; */
+}
+.card3 img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
     /* height: 500px; */
 }
 
@@ -117,7 +161,25 @@ nav a {
     /* color: white; */
     /* border: 5px solid blue; */
 }
+.carusel3 button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 10;
+    /* color: white; */
+    /* border: 5px solid blue; */
+}
 .carusel1 button:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255);
+}
+.carusel3 button:hover{
     box-shadow: 0 0 30px rgba(255, 255, 255);
 }
 
@@ -126,6 +188,12 @@ nav a {
 }
 .ong-btn1{
     margin-left: 675px;
+}
+.chap-btn3{
+    margin-left: -25px;
+}
+.ong-btn3{
+    margin-left: 1235px;
 }
 
 

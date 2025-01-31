@@ -12,7 +12,7 @@ a1.addEventListener("click", ()=>{
     a2.style.backgroundColor = "black"
     a3.style.backgroundColor = "black"
     c2.style.display = "none";
-    // c3.style.display = "none";
+    c3.style.display = "none";
 });
 a2.addEventListener("click", ()=>{
     c2.style.display = "block";
@@ -20,7 +20,15 @@ a2.addEventListener("click", ()=>{
     a1.style.backgroundColor = "black"
     a3.style.backgroundColor = "black"
     c1.style.display = "none";
-    // c3.style.display = "none";
+    c3.style.display = "none";
+});
+a3.addEventListener("click", ()=>{
+    c3.style.display = "block";
+    a3.style.backgroundColor = "blue"
+    a1.style.backgroundColor = "black"
+    a2.style.backgroundColor = "black"
+    c1.style.display = "none";
+    c2.style.display = "none";
 })
 
 
@@ -54,6 +62,22 @@ function nextSlide2() {
 function prevSlide2() {
     index2 = (index2 - 1 + 5) % 5;
     showSlide2();
+}
+
+
+let index3 = 0;
+const carousel3 = document.getElementById("carusel3");
+
+function showSlide3() {
+    carousel3.style.transform = `translateX(${-index3 * 320}px)`;
+}
+function nextSlide3() {
+    index3 = (index3 + 1) % 17;
+    showSlide3();
+}
+function prevSlide3() {
+    index3 = (index3 - 1 + 17) % 17;
+    showSlide3();
 }
 
 
