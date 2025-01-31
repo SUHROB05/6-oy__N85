@@ -6,18 +6,56 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f3f4f6;
+    background-color: #000000;
 }
 
 .container {
-    background: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
     max-width: 400px;
     width: 100%;
     text-align: center;
+    position: relative;
+    margin: 100px auto 0;
+    background: linear-gradient(0deg, #000, #272727);
+    color: #fff;
 }
+
+.container:before,
+.container:after {
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.container:after {
+    filter: blur(70px);
+}
+
+
 
 input {
     width: calc(100% - 20px);
