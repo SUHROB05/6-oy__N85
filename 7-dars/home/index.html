@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="big-contayner">
+        <div class="header contayner">
+            <h2>Where in the world?</h2>
+            <div class="dark">
+                <button>
+
+                </button>
+                <button>
+                    <div class="sun-div">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd9JREFUSEvFlU+ITmEUxn+/kIWVQilFYm8tmxkLs7RQ9sRCJGSIEUKIsMAGeztlN4pZWVsrO0yNTFlZUI57pvfT5/ruH5Mvd3P/vOc9z3ue85znypgvx5yf3gARkbE/8kBq7329A/8pQERcAB6qi8MURkRkFeqK2vcNwAH1Rp3yPyqIiPPAVeAtMKnOt/UpIjYBc8A24Kx6czh+FMBm4BWwFTil3ukAmAYy6btyoPetALkYEVnyIfVaed8HHAEmyuaXwAP1WVk/BzxWP3VSVA+IiNtZSUMVlypFXW6rsFVFEbEfeFoSXMnGl+ejQPYqrz3qiyaQLoA3wA7gpHq3ppyBGGbVqU6AIsGM+yXDSlHfK0WtBNaqX2oAG4FU2KK6rvQiZfxbjqUKhoco3weTGhHfgFUNACmEBeCruqYpRxdFr4GdVZLpKsmtBorm1MlOikYFRMReYEmKQDb5PrC6ouUYcLp8n1JnlwVQ6GuT6cxgVv4KoAzaQfV6AclBOw7sKomeA0/UvGcPU1GPeg1aRGwp3pL3E+q9ptOV5GeANLm0ign1w3D8KC+aKXyn2e1WP3YApNmld23vZXblVBeL13yuKafJrtdXM3F4VD/+zw+nQbLj/WW29aFtrTdFywX4CUTYyBnBel5HAAAAAElFTkSuQmCC" />
+                        <h2>Light mode</h2>
+                    </div>
+                    <div class="moon-div">
+                        <img class="moon"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZ1JREFUSEvFlTsvZVEYhp/XJBqFTjMJ0ZCMhGoUQqIRMiFTKEQ0lDKJylziD0iITqORqKg0E6JRSIRKIi6no8D8golCYvLOXrLJOdu2z2UTX7OLvb73Weu7ijc2vbE+mQDbTcAEMChpqJbLvAiwPQMsAvXAmqTJVwHYbgDWgZEiwXFJG7kBtuuAHWAgIdYvae81AL+A+RShUUmbuQC2G4E/UdxDiJK2KOlHXsA3YPkFkWugRZKrhTxVke3fwHCGQJ+k/TyAG+BjhsAZ0CPpbzWQhxfYDt97IFRRlu0CXyXdVgopDtFd3FTlfC+AMUlH5Q6G/8WAy6hjWytxAv4Bc6HT0xJvu1nSVRKwCkxVCHg8FvJxApwDIWxtQDewKin0VMkLBuMurpKRerxT0mkJIE72MdCVk1CQ1PGoUTJNbX+ORvMh8KFGSGjEAUmh2h7s2bi2PRuP6VoYPyUtFDum7gPb3+OhV+lLQlUF8aXkrbIWTi+wAnwq85RQRdOSDtLOlVuZobPD4vkSLaH2hEAhKsltYCtrCL7v0q8ly0mf/ywkdhlCDF0YAAAAAElFTkSuQmCC" />
+                        <h2>Dark Mode</h2>
+                    </div>
+                </button>
+
+
+            </div>
+        </div>
+        <section class="world_section contayner">
+            <div class="nav">
+                <div class="world-input">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbtJREFUSEu11UuoTVEcx/HPJSN5pCRmTE28pga6IROPklC3hJIiiUsMUIrIW4kiqRsZKCaiZICZkJiZGBl4FTFwB5f11zq1ne46e+ucu0b7v9vr//0/f7vPGJ++MfavBJiOvViIeTmIV3iOM/jcNLDRAAO4iCkFJ1+xGfeaQNoBO3EhX7yDS3ic7f4U+Q6szvZG3KqDVAFz8A7jcnlOFy4fTu+P4Cdm41MnSBUQ0W7HbayviewBluMQjjYFfMDM3NTXNYBleIgXWNQUMIwJKaLxKbKRGsA0fMH3DsPw10W1RD8wEZNSD+K505mMb/iIGU0zeIu5WIxnNYAleboeYWlTwDEcSD24izU1gKh/9CF2ZqgpYBbe5z4M4lTh4gnsQ2z2gv/Zg/h2E65XFu08nmZ7FbZhRbbP5n3pOBCjScW6NK5XMLUQXUzO5ZxF9G0/7pcyKYldTMaeLHbzU29+4SWe4FoWuxC+1g6Edu3C73ZQN3K9sk3wzqXR3d1LQPi6iQ0Vp8dxsArpJoPwE5sfkLUVp1HCrS27W0DLz1VsycY/WfQKEBJ/A29wspclqtuz4j+59mLTD3pVoiLvD9ByShl/aCxCAAAAAElFTkSuQmCC" />
+                    <input type="text" placeholder="Search for a country…">
+                </div>
+                <div class="select-div">
+                    <select class="select" name="" id="">
+                        <option value="Filter by Region" selected>Filter by Region</option>
+                        <option value="Africa">Africa</option>
+                        <option value="America">America</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+            <div class="world-contayner contayner">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
