@@ -1,0 +1,461 @@
+$light-bg: #ffffff;
+$light-text: #111517;
+$dark-bg: #202c37;
+$dark-text: #ffffff;
+$card-bg-light: #f4f4f4;
+$card-bg-dark: #2b3945;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Flow+Circular&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ededed;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #79b7f9;
+}
+
+body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1f344b;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #007bff;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: $card-bg-light;
+    color: $light-text;
+    transition: 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+body.dark-mode {
+    background: $dark-bg;
+    color: $dark-text;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px;
+    background: $light-bg;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    a {
+        text-decoration: none;
+        color: $light-text;
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 32.74px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+            @media (max-width: 560px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 395px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 360px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #theme-toggle {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.82px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        @media (max-width: 560px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 395px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 360px) {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        padding: 10px;
+    }
+}
+
+body.dark-mode header {
+    background: $card-bg-dark;
+}
+
+body.dark-mode header a {
+    color: $dark-text;
+}
+
+body.dark-mode #theme-toggle {
+    color: $dark-text;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    select {
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        box-shadow: 0px 2px 9px 0px #0000000E;
+        border-radius: 5px;
+
+        @media (max-width: 444px) {
+            width: 50%;
+        }
+    }
+
+    .search-box {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0px 2px 9px 0px #0000000E;
+        max-width: 400px;
+
+        i {
+            position: absolute;
+            left: 10px;
+            color: #888;
+            font-size: 16px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 10px 10px 35px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+
+            @media (max-width: 777px) {
+                width: 80%;
+            }
+
+            @media (max-width: 444px) {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 444px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background: $card-bg-dark;
+    color: $dark-text;
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+    .country-card {
+        max-width: 300px;
+        background: $light-bg;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 576px) {
+            max-width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    .country-info {
+        padding: 24px;
+        position: relative;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 26px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin-bottom: 14px;
+           
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin: 5px 0;
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .map-link {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            text-decoration: none;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin: 5px 0;
+            color: blue;
+            margin-top: 15px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(46, 46, 255);
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+body.dark-mode .country-card {
+    background: $card-bg-dark;
+}
+
+#back-button {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid $dark-bg;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+body.dark-mode #back-button {
+    border: none;
+    box-shadow: 0px 0px 7px 0px #0000004B;
+    background: $card-bg-dark;
+    color: $dark-text;
+}
+
+.Country-details {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    gap: 80px;
+
+    @media (max-width: 1100px) {
+        gap: 30px;
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    img {
+        width: 50%;
+        height: 400px;
+        border-radius: 5px;
+
+        @media (max-width: 800px) {
+            width: 100%;
+
+        }
+    }
+
+    .country-info {
+        margin-top: 20px;
+        width: calc(50% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 43.65px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+            @media (max-width: 800px) {
+                text-align: center;
+            }
+        }
+
+        .state {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            gap: 10px;
+
+            @media (max-width: 1100px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            @media (max-width: 800px) {
+                flex-direction: row;
+            }
+
+            @media (max-width: 488px) {
+                flex-direction: column;
+
+            }
+
+            .country-name {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                    strong {
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 32px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                    }
+
+                }
+            }
+
+            .country-details {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .border-countries {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 30px;
+
+            b {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            &-list {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 5px;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 19.1px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    padding: 5px 30px;
+                    box-shadow: 0px 0px 4px 1px #0000001B;
+                    border: 1px solid #979797
+                }
+            }
+        }
+    }
+}
+
+body.dark-mode .Country-details .country-info .border-countries .border-countries-list span {
+    box-shadow: 0px 0px 7px 0px #0000004B;
+    border: none;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #0060c6;
+    }
+}

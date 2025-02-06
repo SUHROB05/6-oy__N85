@@ -9,7 +9,7 @@
     max-width: 1440px;
     width: 1440px;
     margin: 0 auto;
-    background-color: blue;
+    transition: background 0.5s, color 0.5s;
 }
 
 .contayner {
@@ -46,17 +46,21 @@
     color: #fff;
 }
 
-.dark button div {
+.dark button .sun-div,
+.moon-div {
+    width: 200px;
     display: flex;
     gap: 15px;
 }
-.dark button .sun-div{
+
+.sun {
     display: none;
 }
 
 .world_section {
     width: 100%;
-    height: 1000px;
+    min-height: 1000px;
+    padding-bottom: 100px;
     background-color: #202c36;
     padding-top: 50px;
 }
@@ -79,7 +83,7 @@
     height: 56px;
     width: 100%;
     outline: none;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -109,6 +113,7 @@
     color: #fff;
     border-radius: 5px;
     outline: none;
+    font-size: 18px;
 }
 
 .select:focus {
@@ -126,5 +131,62 @@
 .world-contayner {
     margin-top: 50px;
     display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 100px 200px; */
+    gap: 40px;
+}
 
+.card {
+    width: 280px;
+    height: 380px;
+    background-color: #2b3844;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 187px;
+}
+
+.card-img img {
+    border-radius: 10px 10px 0 0;
+    width: 280px;
+    height: 187px;
+}
+
+.card-text {
+    border-radius: 0 0 10px 10px;
+    padding: 17px 20px;
+    height: auto;
+}
+
+.card-text h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.card-text p {
+    margin: 5px 0;
+    font: 800;
+}
+
+.card-text p span {
+    font: 400;
+    color: #b8b8b8ce;
+    margin-left: 5px;
+}
+
+.card-text a {
+    color: red;
+    margin-left: 140px;
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 2px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
